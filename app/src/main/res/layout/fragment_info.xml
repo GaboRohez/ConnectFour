@@ -1,14 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InfoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:text="@string/info"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size20"
+        android:padding="@dimen/dimen16"
+        android:fontFamily="@font/architects_daughter"
+        android:background="@color/colorBlue"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"/>
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dimen140"
+        android:layout_marginTop="@dimen/dimen60"
+        android:layout_marginEnd="@dimen/dimen140"
+        android:src="@drawable/ic_splash" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogo"
+        android:fontFamily="@font/architects_daughter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/size20"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAppName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:fontFamily="@font/architects_daughter"
+        android:textAlignment="center"
+        android:textColor="@color/colorYellow"
+        android:textSize="@dimen/size16"
+        tools:text="v1.0.1" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlue"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen16"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/contentGithub"
+            android:padding="@dimen/dimen3"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/dimen16"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginEnd="@dimen/dimen16"
+                android:src="@drawable/ic_github"
+                android:layout_width="@dimen/dimen30"
+                android:layout_height="@dimen/dimen30"/>
+
+            <TextView
+                android:text="@string/github_url"
+                android:fontFamily="@font/architects_daughter"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contentEmail"
+            android:padding="@dimen/dimen3"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginEnd="@dimen/dimen16"
+                android:src="@drawable/ic_email"
+                android:layout_width="@dimen/dimen30"
+                android:layout_height="@dimen/dimen30"/>
+
+            <TextView
+                android:text="@string/email"
+                android:fontFamily="@font/architects_daughter"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

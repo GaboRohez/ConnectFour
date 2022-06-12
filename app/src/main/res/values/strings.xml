@@ -5,4 +5,8 @@
     <string name="play">Play</string>
     <string name="info">Info</string>
     <string name="version">v%s</string>
+    <string name="github_url">https://github.com/GaboRohez/ConnectFour</string>
+    <string name="email">gabow95k@gmail.com</string>
+    <string name="message_from_intent_email">Send mail...</string>
+    <string name="no_email_client">There are no email clients installed.</string>
 </resources>

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.gaborohez.connectfour.databinding.FragmentMenuBinding
 
 
@@ -31,12 +32,14 @@ class MenuFragment : Fragment() {
     }
 
     private fun setUpEvents() {
+        val navController = Navigation.findNavController(view!!)
+
         binding.btnPlay.setOnClickListener {
 
         }
 
         binding.btnInfo.setOnClickListener{
-
+            navController.navigate(R.id.action_menu_to_info)
         }
     }
 }

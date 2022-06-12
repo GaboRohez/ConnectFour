@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Connect 4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play">Play</string>
+    <string name="info">Info</string>
+    <string name="version">v%s</string>
 </resources>

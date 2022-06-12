@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size50">50sp</dimen>
+    <dimen name="dimen16">16dp</dimen>
+    <dimen name="dimen3">3dp</dimen>
+    <dimen name="dimen40">40dp</dimen>
+    <dimen name="dimen_width_button">170dp</dimen>
+    <dimen name="dimen_height_button">60dp</dimen>
+    <dimen name="size20">20sp</dimen>
+    <dimen name="size16">16sp</dimen>
+</resources>

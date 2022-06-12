@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="@dimen/dimen16"
+    tools:context=".MenuFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_circle_jump" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/architects_daughter"
+        tools:text="@string/app_name"
+        android:textSize="@dimen/size50"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen3"
+        android:layout_below="@+id/tvTitle"
+        android:background="@color/colorBlue" />
+
+    <View
+        android:layout_width="@dimen/dimen40"
+        android:layout_height="@dimen/dimen3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/divider"
+        android:background="@color/colorBlue" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPlay"
+        android:layout_width="@dimen/dimen_width_button"
+        android:layout_height="@dimen/dimen_height_button"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/play"
+        android:backgroundTint="@color/colorRed"
+        android:textAllCaps="false"
+        android:textSize="@dimen/size20" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnInfo"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btnPlay"
+        android:text="@string/info"
+        android:textAllCaps="false"
+        android:fontFamily="@font/architects_daughter"
+        android:backgroundTint="@color/colorYellow"
+        android:textSize="@dimen/size20"
+        android:layout_width="@dimen/dimen_width_button"
+        android:layout_height="@dimen/dimen_height_button"/>
+
+    <TextView
+        android:id="@+id/tvVersion"
+        tools:text="v2.1"
+        android:textSize="@dimen/size16"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

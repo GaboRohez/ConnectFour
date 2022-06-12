@@ -1,4 +1,4 @@
-package com.example.connectfour
+package com.gaborohez.connectfour
 
 import org.junit.Test
 

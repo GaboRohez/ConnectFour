@@ -35,7 +35,7 @@ class MenuFragment : Fragment() {
         val navController = Navigation.findNavController(view!!)
 
         binding.btnPlay.setOnClickListener {
-
+            navController.navigate(R.id.action_menu_to_game)
         }
 
         binding.btnInfo.setOnClickListener{

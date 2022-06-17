@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_menu_to_info"
             app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_menu_to_game"
+            app:destination="@id/gameFragment" />
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
         android:name="com.gaborohez.connectfour.InfoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.gaborohez.connectfour.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
 </navigation>

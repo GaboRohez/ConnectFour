@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:background="#DCDCDC"
+    android:padding="@dimen/dimen16"
+    tools:context=".GameFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:textSize="@dimen/size50"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/architects_daughter"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/dimen40"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_below="@+id/tvTitle"
+        android:id="@+id/gridPut"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        grid:rowCount="1"
+        grid:columnCount="7">
+
+        <ImageButton
+            android:id="@+id/addInOne"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="@dimen/dimen50dp"
+            android:background="@drawable/ic_arrow"
+            android:foreground="?attr/selectableItemBackground" />
+
+        <ImageButton
+            android:id="@+id/addInTwo"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="@dimen/dimen50dp"
+            android:background="@drawable/ic_arrow"
+            android:foreground="?attr/selectableItemBackground" />
+
+        <ImageButton
+            android:id="@+id/addInThree"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="@dimen/dimen50dp"
+            android:background="@drawable/ic_arrow"
+            android:foreground="?attr/selectableItemBackground" />
+
+        <ImageButton
+            android:id="@+id/addInFour"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="@dimen/dimen50dp"
+            android:background="@drawable/ic_arrow"
+            android:foreground="?attr/selectableItemBackground" />
+
+        <ImageButton
+            android:id="@+id/addInFive"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="@dimen/dimen50dp"
+            android:background="@drawable/ic_arrow"
+            android:foreground="?attr/selectableItemBackground" />
+
+        <ImageButton
+            android:id="@+id/addInSix"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="@dimen/dimen50dp"
+            android:background="@drawable/ic_arrow"
+            android:foreground="?attr/selectableItemBackground" />
+
+        <ImageButton
+            android:id="@+id/addInSeven"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="@dimen/dimen50dp"
+            android:background="@drawable/ic_arrow"
+            android:foreground="?attr/selectableItemBackground" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridGame"
+        android:layout_below="@+id/gridPut"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        grid:rowCount="6"
+        grid:columnCount="7">
+
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <!-- end row -->
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <!-- end row -->
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <!-- end row -->
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <!-- end row -->
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <!-- end row -->
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/colorBlue"
+            android:layout_width="@dimen/dimen50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/dimen3">
+
+            <ImageView
+                android:src="@drawable/circle_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <!-- end row -->
+        
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</RelativeLayout>
